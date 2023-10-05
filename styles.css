@@ -1,0 +1,524 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    
+    
+    html {
+    scroll-behavior: smooth;
+    }
+    
+    section {
+    background-color: rgb(208, 182, 169);
+    padding-bottom: 70px;
+    overflow: hidden;
+    }
+
+    .menubar {
+        height: 60px;
+        background-color: rgb(142, 110, 99);
+        background:
+        linear-gradient(rgb(159, 124, 112) 30%, rgb(141, 109, 98) 100%);
+        padding-bottom: 23px;
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        margin-top: 0;
+        top: 0;
+        width: 96.1%;
+        z-index: 1000;
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+        transition: top 0.3s
+        }
+    
+    .main {
+    background-color: rgb(160, 128, 115);
+    height: 100vh;
+    background:
+    linear-gradient(rgb(179, 143, 129) 30%, rgb(109, 85, 75) 100%);
+    color: white;
+    font-size: 30px;
+    }
+
+    .main-text {
+        margin-left: 70px;
+        margin-bottom: 180px;
+        width: auto;
+    }
+    
+    
+    .tab-headers {
+    display: flex;
+    margin: 20px 0 20px;
+    justify-content: center;
+    padding-left: 60px;
+    }
+    
+    
+    .tab-links {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+    color:rgb(62, 48, 43);
+    cursor: pointer;
+    position: relative;
+    }
+    
+    
+    .tab-links:hover {
+    text-shadow: 0 0 20px rgb(99, 74, 63);
+    }
+    
+    
+    .tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background:rgb(77, 60, 54);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    }
+    
+    
+    .tab-links.active-link::after{
+    width: 100%;
+    }
+    
+    
+    .tab-contents ul2 li{
+    list-style: none;
+    margin: 10px 0;
+    }
+    
+    
+    .tab-contents ul2 li span {
+    color:rgb(77, 60, 54);
+    font-size: 20px;
+    font-weight: 400;
+    }
+    
+    
+    .tab-contents{
+    display: none;
+    }
+    
+    
+    .tab-contents.active-tab {
+    display: block;
+    width: 100%;
+    }
+    
+    
+    .logo {
+    margin-right: auto;
+    }
+    
+    
+    .logopic {
+    width: 87px;
+    height: 35px;
+    margin-top: 22px;
+    justify-content: flex-start;
+    padding-right: 30px;
+    }
+    
+    
+    footer {
+    background-color: rgb(226, 197, 187);
+    }
+    
+    
+    nav {
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    
+    ul {
+    display: flex;
+    font-size: 25px;
+    justify-content: flex-end;
+    list-style-type: none;
+    }
+    
+    /* tab content */
+    ul2 {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 70px;
+    padding-right: 70px;
+    }
+    
+    
+    
+    /* tab content list text */
+    li {
+    width: 700px;
+    border-radius: 25px;
+    height: auto;
+    background-color:rgb(226, 197, 187);
+    text-decoration: none;
+    font-size: 16px;
+    color:rgb(77, 60, 54);
+    line-height: 25px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    }
+    
+    /* MSP pic caption */
+    caption {
+    width: 900px;
+    text-decoration: none;
+    font-size: 10px;
+    color:rgb(77, 60, 54);
+    padding-top: 20px;
+    }
+    
+    
+    /* name header */
+    h1 {
+    font-size: 80px;
+    margin: 0;
+    padding-top: 250px;
+    font-weight: 600;
+    color: rgb(203, 175, 164);
+    width: 100%;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgb(49, 42, 42));
+    opacity: 90%;
+    line-height: .7em;
+    outline: none;
+    animation: glowName 17s linear infinite;
+    letter-spacing: 8px;
+    }
+
+    @keyframes glowName {
+    20%, 21.1% {
+    color: rgb(186, 158, 144);
+    text-shadow: none;
+    }
+    0%, 20.1%, 21%, 22%, 100% {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(236, 198, 176),
+    0 0 20px rgb(236, 198, 176),
+    0 0 40px rgb(236, 198, 176),
+    0 0 80px rgb(236, 198, 176),
+    0 0 160px rgb(236, 198, 176);
+    }
+    }
+    
+    /* text underneath homepage name */
+    .undername {
+    padding-top: 90px;
+    }
+    
+    /* tab names */
+    p {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    font-weight: 200;
+    line-height: 2;
+    }
+    
+    .main-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .button {
+    border-radius: 25px;
+    width: 180px;
+    height: 50px;
+    background-color: rgb(101, 79, 71);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 5px;
+    margin-top: 20px;
+    }
+    
+    
+    .button:hover {
+    background-color: rgb(77, 60, 54);
+    color: rgb(212, 159, 149);
+    box-shadow: 0 0 20px rgb(255, 238, 223);
+    }
+    
+    .button:active {
+    background-color: rgb(121, 94, 84);
+    color: rgb(182, 133, 124);
+    }
+    
+    .socials {
+    padding-bottom: 300px;
+    padding-right: 10px;
+    }
+    
+    .linkedin {
+    font-size: 25px;
+    text-align: center;
+    margin-top:320px;
+    margin-right: 70px;
+    }
+    
+    .linkedinbutton {
+    text-align: center;
+    margin-right: 70px;
+    }
+    
+    .linkedinbutton:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgb(255, 238, 223);
+    border-radius: 20px;
+    height: 80px;
+    width: 80px;
+    margin-left: 8px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    }
+    
+    .infopage {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 70px;
+    color: rgb(62, 48, 43);
+    }
+    
+    /* about me/experience headers */
+    h2 {
+    font-size: 40px;
+    color: rgb(77, 60, 54);
+    margin: 0;
+    text-align: center;
+    padding-top: 120px;
+    border-radius: 25px;
+    }
+    
+    .headshot {
+    display: flex;
+    align-items: center;
+    }
+    
+    .headshotpic {
+    width: 270px;
+    height: 270px;
+    border-radius: 135px;
+    border: 3px solid white;
+    }
+    
+    .mspPic {
+    width: 650px;
+    height: 460px;
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 25px;
+    }
+    
+    .middlesection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    }
+    
+    .experience {
+    text-align: center;
+    font-weight: 200;
+    }
+    
+    .activities {
+    text-align: center;
+    font-weight: 200;
+    }
+    
+    .connect {
+    display: flex;
+    width: 200px;
+    height: 70px;
+    padding-left: 200px;
+    padding-top: 70px;
+}
+    
+    /* contact info labels */
+    p3 {
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    }
+    
+    /* contact info link */
+    p2 {
+    margin: 0;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 30px;
+    }
+    
+    /* contact info header */
+    h3 {
+    font-size: 40px;
+    color: rgb(77, 60, 54);
+    text-align: center;
+    }
+    
+    a {
+    text-decoration: none;
+    color: white;
+    }
+    
+    a2 {
+    text-decoration: none;
+    color: rgb(77, 60, 54);
+    text-align: center;
+    }
+    
+    /* homepage button */
+    .button2 {
+    border-radius: 25px;
+    width: 180px;
+    height: 27px;
+    background-color: rgb(143, 112, 101);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 5px;
+    margin-top: 40px;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    }
+
+    .button2:hover {
+    background-color: rgb(112, 89, 80);
+    color: rgb(212, 159, 149);
+    box-shadow: 0 0 20px rgb(255, 238, 223);
+    }
+    
+    .button2:active {
+    background-color: rgb(170, 134, 122);
+    color: rgb(218, 165, 156);
+    }
+    
+    .information {
+    width: auto;
+    border-radius: 25px;
+    height: auto;
+    background-color:rgb(226, 197, 187);
+    padding-bottom: 2px;
+    margin-top: 50px;
+    }
+    
+    .information2 {
+    text-align: center;
+    }
+    
+    .barbutton {
+    width: 155px;
+    height: 38px;
+    background-color: rgb(118, 92, 83);
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+    padding-top: 5px;
+    margin-top: 20px;
+    }
+    
+    bar {
+    width: 150px;
+    text-decoration: none;
+    }
+    
+    
+    .barbutton:hover {
+    background-color: rgb(91, 72, 65);
+    color: rgb(221, 166, 155);
+    box-shadow: 0 0 15px rgb(255, 238, 223);
+    }
+    
+    .barbutton:active {
+    background-color: rgb(131, 100, 90);
+    color: rgb(207, 151, 142);
+    }
+    
+    /* slider animation */
+    
+    .wrapper {
+    width: 180px;
+    height: 20px;
+    background-color: rgb(118, 92, 83);
+    font-size: 23px;
+    font-weight: 400;
+    color: white;
+    font-weight: 400;
+    padding-top: 1.5px;
+    padding-bottom: 21.5px;
+    padding-right: 1.5px;
+    padding-left: 1.5px;
+    margin-top: 20px;
+    display: flex;
+    align-items: space;
+    justify-content: center;
+    }
+    
+    .slider {
+    font-size: 30px;
+    height: 50px;
+    padding-left: 0px;
+    overflow: hidden;
+    }
+    
+    .slider div {
+    color: white;
+    height: 40px;
+    margin-bottom:60px;
+    padding-left: 80px;
+    padding: 1px 60px;
+    box-sizing: border-box;
+    }
+    
+    .slidertext1 {
+    border-radius: 5px;
+    font-weight: 600;
+    background: rgb(255, 200, 176);
+    animation: animate 8s linear infinite;
+    }
+    
+    .slidertext2 {
+    border-radius: 5px;
+    font-weight: 600;
+    background: rgb(251, 181, 181);
+    }
+    
+    .slidertext3 {
+    border-radius: 5px;
+    font-weight: 600;
+    background: rgb(255, 183, 203);
+    }
+    
+    @keyframes animate {
+    0% {margin-top:-300px;}
+    5% {margin-top:-200px;}
+    33% {margin-top:-200px;}
+    38% {margin-top:-100px;}
+    66% {margin-top:-100px;}
+    71% {margin-top:0px;}
+    100% {margin-top:0px;}
+    }
+    
+    
+    
+    
+    
+    
+    
+    
