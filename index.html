@@ -11,7 +11,7 @@
 <body>
     <section class="main" id="main">
     <nav>
-<ul class="menubar">
+<ul class="menubar" id="menubar">
         <div class="logo">
             <img class="logopic" src="src/images/logo.PNG" alt="Logo"/>
         </div>
@@ -167,7 +167,18 @@
     document.getElementById(name).classList.add("active-tab");
     }
 </script>
-<script src="src/app.js"></script>
+<script type="text/javascript">
+    var prevPos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentPos = window.pageYOffset;
+    if (prevPos > currentPos) {
+    document.getElementById("menubar").style.top = "0";
+    } else {
+    document.getElementById("menubar").style.top = "-100px";
+    }
+    prevPos = currentPos;
+    }
+    </script>    
 </body>
 </html>
 
