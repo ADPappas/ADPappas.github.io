@@ -171,9 +171,9 @@
     var prevPos = window.pageYOffset;
     window.onscroll = function() {
     var currentPos = window.pageYOffset;
-    if ((prevPos - currentPos) > -1) {
+    if (prevPos > currentPos) {
     document.getElementById("menubar").style.top = "0";
-    } else {
+    } else if (prevPos > 100) {
     document.getElementById("menubar").style.top = "-100px";
     }
     prevPos = currentPos;
