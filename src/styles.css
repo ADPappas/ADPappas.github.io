@@ -393,10 +393,12 @@ body {
     font-weight: 400;
     padding-top: 5px;
     margin-top: 40px;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 8px;
     }
 
     .button2:hover {
