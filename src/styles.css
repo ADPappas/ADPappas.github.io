@@ -24,10 +24,10 @@ body {
         justify-content: flex-end;
         position: fixed;
         margin-top: 0;
-        top: 0;
         width: 97.3%;
         z-index: 1000;
         box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+        transition: top 0.5s;
         }
     
     .main {

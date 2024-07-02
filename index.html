@@ -11,7 +11,7 @@
 <body>
     <section class="main" id="main">
     <nav>
-<ul class="menubar">
+<ul class="menubar" id="menubar">
         <div class="logo">
             <img class="logopic" src="src/images/logo.PNG" alt="Logo"/>
         </div>
@@ -55,7 +55,7 @@
 <div>
     <h2>○ ○ ○ About Me ○ ○ ○</h2>
         <div class="information">
-            <p>Hi, I'm Alexis! I'm from Toledo, Ohio, and I’m a second-year Computer Science and Engineering major at the Ohio State University.
+            <p>Hi, I'm Alexis! I'm from Toledo, Ohio, and I’m a third-year Computer Science and Engineering major at the Ohio State University.
             Outside of classes, I enjoy participating in clubs, such as the Cyber Security club and ACM-W.
             I’m currently working toward earning a bachelor’s degree. After graduation, I plan to do something
             related to software development or cyber security, but I’m also open to other areas, and I would love to explore them through internships.</p><br>
@@ -70,7 +70,7 @@
     <h2>○ ○ ○ Experience / Activites ○ ○ ○</h2>
         <div class="tab-headers">
             <p class="tab-links active-link" onclick="switchtab('education')">Education</p>
-            <p class="tab-links" onclick="switchtab('skills')">Skills</p>
+            <p class="tab-links" onclick="switchtab('skills')">Skills/Experience</p>
             <p class="tab-links" onclick="switchtab('msp')">Morrill Scholarship Program</p>
             <p class="tab-links" onclick="switchtab('clubs')">Clubs</p>
         </div>
@@ -78,8 +78,7 @@
         <ul2>
             <li><span>○ The Ohio State University ○</span><br><br>◦ Aug 2022 - May 2026 ◦<br>
             ◦ Bachelor’s of Science in Computer Science and Engineering ◦
-            <br><br>• 4.0 GPA<br>• Classes completed: CSE 2221, CSE 1223, MATH 1151, PHYSICS 1250,
-            ENGR 1181, ENGR 1182, ENGR 1100, ANTHROP 2200, MATH 1172<br>• Classes in progress: CSE 2231, CSE 2321, STAT 3470, PHILOS 1332
+            <br><br>• 3.98 GPA<br>
             </li>
             <li><span>○ Bowling Green State University ○</span><br><br>◦ Aug 2020 - May 2022 ◦<br>
             ◦ Dual Enrollment ◦
@@ -96,13 +95,20 @@
         <ul2>
             <li><span>○ Skills ○</span><br><br>
             ◦ Java ◦
-            <br>◦ HTML ◦<br>◦ CSS ◦<br> ◦ MATLAB ◦<br>◦ SolidWorks ◦<br>◦ Microsoft Excel ◦<br><br>◦ Problem-solving ◦
-            <br>◦ Teamwork ◦<br>◦ Customer Service ◦
+            <br> ◦ C ◦ <br> ◦ HTML ◦ <br>◦ CSS ◦ <br>◦ React ◦<br>◦ x86-64 Assembly ◦<br>◦ GNU Debugger ◦<br>◦ Linux ◦<br>◦ Next.js ◦<br>◦ J-Unit Testing ◦<br> ◦ MATLAB ◦<br>◦ SolidWorks ◦<br>◦ Microsoft Excel ◦<br><br>◦ Problem-solving ◦
+            <br>◦ Teamwork ◦<br>◦ Customer Service ◦ 
             </li>
-            <li><span>○ Work Experience ○</span><br><br><span><i>◦ Tim Hortons - Baker ◦</i></span>
-            <br>◦ June 2023 - Aug 2023 ◦<br><br>• I was responsible for preparing all baked goods before the store opened. Once done baking, I helped with
-            customers’ orders at the front. Other tasks included dishwashing, restocking, and filling out production sheets.
-            The environment was fast-paced and required excellent communication with team members and customers.
+            <li><span>○ Work Experience ○</span>
+                <br><br><span><i>◦ Webacy Blockchain and Web3 Security Research Extern ◦</i></span>
+                <br>◦ June 2024 - May 2024 ◦<br><br>• Conducted comprehensive blockchain technology analysis by identifying emerging blockchain technologies and assessing their market positioning and technological offerings
+                <br>• Analyzed Web3 security competitors, delineating their product offerings, strategic market placement, and consumer insights to spotlight potential market disruptors
+                <br>• Synthesized research findings to enhance company competitiveness in the digital landscape
+                <br>• Worked both autonomously and with colleagues from across the globe to meet ambitious deadlines
+
+                <br><br><span><i>◦ Tim Hortons - Baker ◦</i></span>
+                <br>◦ June 2023 - Aug 2023 ◦<br><br>• I was responsible for preparing all baked goods before the store opened. Once done baking, I helped with
+                customers’ orders at the front. Other tasks included dishwashing, restocking, and filling out production sheets.
+                The environment was fast-paced and required excellent communication with team members and customers.
             </li>
         </ul2>
     </div>
@@ -167,7 +173,18 @@
     document.getElementById(name).classList.add("active-tab");
     }
 </script>
-<script src="src/app.js"></script>
+<script type="text/javascript">
+    var prevPos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentPos = window.pageYOffset;
+    if (prevPos > currentPos) {
+    document.getElementById("menubar").style.top = "0";
+    } else {
+    document.getElementById("menubar").style.top = "-100px";
+    }
+    prevPos = currentPos;
+    }
+    </script>    
 </body>
 </html>
 
